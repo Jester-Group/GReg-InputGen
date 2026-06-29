@@ -46,13 +46,13 @@ C:\Program Files\OVITO_Basic\ovito.exe
 If installed elsewhere, edit function:
 open_in_ovito()
 
-Input:
+# Input
 The script requires two XYZ files.
 
 graphene.xyz
 molecule.xyz
 
-Basic Usage:
+# Basic Usage
 Run the complete workflow
 
 python input_gen.py graphene.xyz molecule.xyz
