@@ -66,18 +66,18 @@ python input_gen.py graphene.xyz molecule.xyz \
     --optimized-xyz xtb_optimization/xtbopt.xyz
 
 Command Line Options:
--o, --output	Output aligned structure
--v, --view	Open generated coordinates in OVITO
--d, --distance	Molecule–graphene distance (Å)
---buffer	Graphene trimming buffer (Å)
---bond-cutoff	Carbon–carbon cutoff for neighbour analysis (Å)
---edge-ch	Edge C–H bond length (Å)
---xtb-input	Filename of xTB-ready XYZ
---xtb-workdir	xTB working directory
---xtb	Path to xTB executable
---method	xTB method (gfnff, gfn1, gfn2)
---solvent	Optional ALPB solvent
---skip-xtb	Skip geometry optimization
+-o, --output	Output aligned structure;
+-v, --view	Open generated coordinates in OVITO;
+-d, --distance	Molecule–graphene distance (Å);
+--buffer	Graphene trimming buffer (Å);
+--xtb	Path to xTB executable;
+--method	xTB method (gfnff, gfn1, gfn2);
+--solvent	Optional ALPB solvent;
+--bond-cutoff	Carbon–carbon cutoff for neighbour analysis (Å);
+--edge-ch	Edge C–H bond length (Å);
+--xtb-input	Filename of xTB-ready XYZ;
+--xtb-workdir	xTB working directory;
+--skip-xtb	Skip geometry optimization;
 --optimized-xyz	Existing optimized xTB structure
 
 # Workflow
