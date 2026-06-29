@@ -17,12 +17,15 @@ def info():
           '    INFO \n'
           ' ---------- \n'
         
-          'This is a helper script for the GRegOptimizer software: \n'
-          'it is intended to simplify generation of input xyz files \n'
+          'The script is intended to simplify generation of input xyz files \n'
           'by reasonable alignment of (un)optimized molecules on graphene \n'
           'and subsequent geometry optimization on a trimmed graphene with fixed coords. \n'
           'The optimized molecule is finally re-aligned on a larger graphene \n'
           'for simulation with GRegOptimizer. \n'
+
+          'GReg-InputGen is distributed in the hope that it will be useful, \n'
+          'but WITHOUT ANY WARRANTY; without even the implied warranty of \n'
+          'MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n'
 
           ' ---------- \n'
           '    INFO \n'
