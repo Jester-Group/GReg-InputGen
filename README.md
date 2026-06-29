@@ -9,11 +9,14 @@ Python 3.9+
 NumPy
 RDKit
 
+
 Optional:
 xTB
 OVITO
 
-Install Python dependencies
+
+Install Python dependencies:
+
 Using Conda (recommended):
 conda install -c conda-forge numpy rdkit
 
@@ -22,6 +25,7 @@ pip install numpy
 
 RDKit is strongly recommended to be installed through Conda.
 
+
 Install xTB:
 
 Download xTB from
@@ -29,8 +33,10 @@ https://github.com/grimme-lab/xtb
 
 Ensure that the executable is available in your PATH.
 
+
 Verify with:
 xtb --version
+
 
 Install OVITO (optional):
 
@@ -51,19 +57,20 @@ Run the complete workflow
 
 python input_gen.py graphene.xyz molecule.xyz
 
-Run with visualization
+Run with visualization:
 
 python input_gen.py graphene.xyz molecule.xyz --view
 
-Only prepare xTB input
+Only prepare xTB input:
 
 python input_gen.py graphene.xyz molecule.xyz --skip-xtb
 
-Reuse an existing xTB optimization
+Reuse an existing xTB optimization:
 
 python input_gen.py graphene.xyz molecule.xyz \
     --skip-xtb \
     --optimized-xyz xtb_optimization/xtbopt.xyz
+
 
 Command Line Options:
 -o, --output	Output aligned structure;
