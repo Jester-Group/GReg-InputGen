@@ -80,51 +80,6 @@ Command Line Options:
 --skip-xtb	Skip geometry optimization;
 --optimized-xyz	Existing optimized xTB structure
 
-# Workflow
-The complete workflow is illustrated below.
-
-Graphene.xyz         Molecule.xyz
-       │                  │
-       └─────────┬────────┘
-                 │
-                 ▼
-     Read molecular coordinates
-                 │
-                 ▼
-     Determine graphene plane
-                 │
-                 ▼
-     PCA alignment of molecule
-                 │
-                 ▼
-   Place molecule above graphene
-                 │
-                 ▼
- Write aligned full graphene system
-                 │
-                 ▼
-   Trim graphene around molecule
-                 │
-                 ▼
- Remove primary carbons & saturate with H
-                 │
-                 ▼
-   Create xTB optimization input
-                 │
-                 ▼
-   Constrained xTB optimization
-                 │
-                 ▼
-  Extract optimized molecule only
-                 │
-                 ▼
-   Place optimized molecule onto
-   original graphene sheet
-                 │
-                 ▼
-      Ready for GRegOptimizer
-
-
 # Output file description
 graphene_with_molecule.xyz	Initial aligned coordinates
 xtb_ready.xyz	Trimmed hydrogen-saturated xTB input
@@ -134,6 +89,7 @@ optimized_on_full_graphene.xyz	Final coordinates
 
 # Example commandline usage
 If you want to use specific methods/parameters
+
 python input_gen.py graphene.xyz molecule.xyz \
     --distance 3.5 \
     --method gfn2 \
